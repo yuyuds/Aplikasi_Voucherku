@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+
+                <ImageView
+                    android:id="@+id/imageVoucher"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/logopb"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textNamaVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:gravity="center"
+                    android:text="Nama Vocher"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toEndOf="@+id/imageVoucher"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textHargaVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Harga"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageVoucher"
+                    app:layout_constraintTop_toBottomOf="@+id/textNamaVoucher" />
+
+                <TextView
+                    android:id="@+id/textIdVoucher"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="ID vocher"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    app:layout_constraintStart_toEndOf="@+id/imageVoucher"
+                    app:layout_constraintTop_toBottomOf="@+id/textHargaVoucher" />
+
+                <Button
+                    android:id="@+id/buttonEditVoucher"
+                    android:layout_width="24dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_edit_"
+                    android:padding="0dp"
+
+                    android:textColor="#D02C1A"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/buttonHapusVoucher"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonHapusVoucher"
+                    android:layout_width="24dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_delete"
+                    android:padding="0dp"
+                    android:textColor="#D02C1A"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>
